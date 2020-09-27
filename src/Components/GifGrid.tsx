@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { iGif } from "../Interfaces";
 import { useFetchGifs } from "./../Hooks/useFetchGifs";
 import { GifGridItem } from "./GifGridItem";
+import { string } from "prop-types";
 
 export const GifGrid: FunctionComponent<{ category: string }> = ({
   category,
@@ -19,4 +20,8 @@ export const GifGrid: FunctionComponent<{ category: string }> = ({
       </div>
     </>
   );
+};
+
+GifGrid.propTypes = {
+  category: string.isRequired,
 };
