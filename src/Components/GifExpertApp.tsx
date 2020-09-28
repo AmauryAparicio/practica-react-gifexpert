@@ -2,8 +2,10 @@ import React, { FunctionComponent, useState } from "react";
 import { AddCategory } from "./AddCategory";
 import { GifGrid } from "./GifGrid";
 
-export const GifExpertApp: FunctionComponent = (): JSX.Element => {
-  const [categories, setCategories] = useState<string[]>(["One Punch Man"]);
+export const GifExpertApp: FunctionComponent<{
+  defaultCategories: string[];
+}> = ({ defaultCategories = [] }): JSX.Element => {
+  const [categories, setCategories] = useState<string[]>(defaultCategories);
 
   return (
     <>
