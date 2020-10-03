@@ -1,6 +1,6 @@
 # Gif Expert App
 
-Gif Searcher App  .
+Gif Search App  .
 
 ## Features
 
